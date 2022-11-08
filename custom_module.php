@@ -2,7 +2,8 @@
 
 /**
  * @file
- * Contains custom_module.module. This module redirects to the user page instead of the user/edit page (Drupal's default behavior). 
+ * Contains custom_module.php - rename to custom_module.module... You should know how to create a module :) 
+ * This module redirects to the user page instead of the user/edit page (Drupal's default behavior). 
  */
 
 use Drupal\Core\Url;
@@ -10,7 +11,8 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Implements hook_form_FORM_ID_alter(). If you'd only like to redirect after editing a new user and not after creating a new user change function to custom_module_form_user_edit_form_alter
+ * Implements hook_form_FORM_ID_alter(). If you'd only like to redirect after editing a new user and not after creating 
+ * a new user change function to custom_module_form_user_edit_form_alter
  */
 function custom_module_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
